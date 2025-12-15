@@ -34,6 +34,14 @@ o<!DOCTYPE html>
             border-right: #0b85fe 7px solid; 
             padding: 25px;
         }
+        footer{
+            background-color: black;
+            color: rgb(245, 248, 250);
+            text-align: center;
+            padding: 10;
+            font-size: 16px;
+            margin-top: 40;
+        }
     </style>
 </head>
 <body>
@@ -42,22 +50,22 @@ o<!DOCTYPE html>
     <p>Welcome to the HTML tutorial. Click on the topics below to start learning:</p>
     <h2>Topics</h2>
     <ul>
-        <li><a href="">Introduction to HTML</a></li>
-        <li><a href="">HTML Document Structure</a></li>
-        <li><a href="">Heading</a></li>
-        <li><a href="">Paragraph</a></li>
-        <li><a href="">Text Formatting</a></li>
-        <li><a href="">Creating Links</a></li>
-        <li><a href="">Lists (Ordered and Unordered)</a></li>
-        <li><a href="">Adding Images</a></li>
-        <li><a href="">Creating Tables</a></li>
-        <li><a href="">HTML Forms</a></li>
-        <li><a href="">Embedding Multimedia (Audio & Video)</a></li>
-        <li><a href="">Semantic HTML</a></li>
+        <li><a href="#Intro">Introduction to HTML</a></li>
+        <li><a href="#structure">HTML Document Structure</a></li>
+        <li><a href="#Heading">Heading</a></li>
+        <li><a href="#Paragraph">Paragraph</a></li>
+        <li><a href="#Formatting">Text Formatting</a></li>
+        <li><a href="#Links">Creating Links</a></li>
+        <li><a href="#Lists">Lists (Ordered and Unordered)</a></li>
+        <li><a href="#Adding">Adding Images</a></li>
+        <li><a href="#Creating">Creating Tables</a></li>
+        <li><a href="#Forms">HTML Forms</a></li>
+        <li><a href="#Semantic">Semantic HTML</a></li>
+        <li><a href="#workshop">My workshop (Audio & Video)</a></li>
     </ul>
     <hr>
     <!-- Section 1 -->
-     <h2>Introduction to HTML </h2>
+     <h2 id="Intro">Introduction to HTML </h2>
     <pre>
     - HTML stands for Hyper Text Markup Language
     - HTML is the standard markup language for creating Web pages
@@ -70,10 +78,10 @@ o<!DOCTYPE html>
     - HTML can embed programs written in a scripting language such as JavaScript, which affects the behavior and 
     content of web pages
     - HTML is not a programming language, but a markup language </pre>
-    <a href="">Top</a>
+    <a href="#">Top</a>
     <hr>
     <!-- Section 2 -->
-        <h2>HTML Document Structure</h2>
+        <h2 id="structure">HTML Document Structure</h2>
         <p>An HTML document has the following basic structure... </p>
     <pre><xmp>
  คำอธิบาย: 
@@ -93,12 +101,12 @@ o<!DOCTYPE html>
     ตัวอย่าง: <h1>Hello, World!</h1> 
             <img src="image.jpg" alt="A description of the image">   
     </xmp></pre>
-    <a href="">Top</a>
+    <a href="#">Top</a>
     <hr>
 
 <!-- Section 3 -->
-<h2>Heading</h2>
-<a href="">workshop</a>
+<h2 id="Heading">Heading</h2>
+<p><a href="W03_01_heading.html">workshop</a></p>
 <p><xmp> headings are defined with the <h1> to <h6> tags..</xmp></p>
 
 <pre><xmp>- <h1>: Heading 1
@@ -107,19 +115,19 @@ o<!DOCTYPE html>
 - <h4>: Heading 4
 - <h5>: Heading 5
 - <h6>: Heading 6</xmp></pre>
-<a href="">Top</a>
+<a href="#">Top</a>
 <hr>
 
 <!-- Section 4 -->
-<h2>Paragraph</h2>
+<h2 id="Paragraph">Paragraph</h2>
 <a href="">workshop</a>
 <p><xmp> paragraphs are defined with the <p> tag...</xmp></p>
  <pre><xmp>- <p>: Paragraph</xmp></pre>
- <a href="">Top</a>
+ <a href="#">Top</a>
 <hr>
 
 <!-- Section 5 -->
- <h2>Text Formatting</h2>
+ <h2 id="Formatting">Text Formatting</h2>
 <a href="">workshop</a>
 <p><xmp>HTML provides various elements to format text...</xmp></p>
  
@@ -144,11 +152,11 @@ o<!DOCTYPE html>
 - <blockquote>: Block quotation
 - <q>: Inline quotation
 - <code>: Code snippet</xmp></pre>
-<a href="">Top</a>
+<a href="#">Top</a>
 <hr>
 
 <!-- Section 6 -->
-<h2>Creating Links</h2>
+<h2 id="Links">Creating Links</h2>
 <a href="">workshop</a>
 <p><xmp> links are defined with the <a> tag...</xmp></p>
  <pre><xmp>- <a href="url" target="">Link text</a>
@@ -171,11 +179,11 @@ o<!DOCTYPE html>
 - Download links:
      - Use the download attribute to create a download link
      - Example: <a href="file.txt" download>Download Text File</a></xmp></pre>
-<a href="">Top</a>
+<a href="#">Top</a>
 <hr>
 
 <!-- Section 7 -->
- <h2>Lists (Ordered and Unordered)</h2>
+ <h2 id="Lists">Lists (Ordered and Unordered)</h2>
 <a href="">workshop</a>
 <p><xmp>lists are defined with the <ul>, <ol>, and <li> tags...</xmp></p>
  <pre><xmp>- <ul>: Unordered list
@@ -218,11 +226,11 @@ o<!DOCTYPE html>
     - Example: <ol style="list-style-type: lower-alpha;">
     - Example: <ol style="list-style-type: upper-roman;">
     - Example: <ol style="list-style-type: lower-roman;"></xmp></pre>
-<a href="">Top</a>
+<a href="#">Top</a>
 <hr>
 
 <!-- Section 8 -->
- <h2>Adding Images</h2>
+ <h2 id="Adding">Adding Images</h2>
 <a href="">workshop</a>
 <p><xmp>HTML images are defined with the <img> tag...</xmp></p>
 <pre><xmp>- <img src="url" alt="description">
@@ -266,22 +274,22 @@ o<!DOCTYPE html>
      object-fit: cover;
      }</xmp></pre>
 
-<a href="">Top</a>
+<a href="#">Top</a>
 <hr>
 
 <!-- Section 9 -->
- <h2>Creating Tables</h2>
+ <h2 id="Creating">Creating Tables</h2>
 <a href="">workshop</a>
 <p><xmp>HTML tables are defined with the <table>, <tr>, <th>, and <td> tags...</xmp></p>
  <pre><xmp>- <table>: Table
 - <tr>: Table row
 - <th>: Table header
 - <td>: Table data/cell</xmp></pre>
-<a href="">Top</a>
+<a href="#">Top</a>
 <hr>
 
 <!-- Section 10 -->
-<h2>HTML Forms</h2>
+<h2 id="Forms">HTML Forms</h2>
 <p><xmp>HTML forms are defined with the <form> tag...</xmp></p>
  <pre><xmp>หัวข้อเกี่ยวกับฟอร์ม
 1. โครงสร้างพื้นฐานของฟอร์ม
@@ -318,11 +326,11 @@ o<!DOCTYPE html>
 7. การส่งฟอร์ม (Form Submission)
     - การส่งข้อมูลไปยังเซิร์ฟเวอร์
     - การใช้ JavaScript (เช่น onsubmit)</xmp></pre>
-<a href="">Top</a>
+<a href="#">Top</a>
 ้<hr>
 
 <!-- Section 11 -->
-<h2>Semantic HTML</h2>
+<h2 id="Semantic">Semantic HTML</h2>
 <p><xmp>Semantic HTML elements clearly define the content of a web page...</xmp></p>
 <pre><xmp>- <header>: Defines a header for a document or section
 - <nav>: Defines navigation links
@@ -330,9 +338,21 @@ o<!DOCTYPE html>
 - <article>: Defines an article
 - <aside>: Defines content aside from the page content
 - <footer>: Defines a footer for a document or section</xmp></pre>
-<a href="">Top</a>
+<a href="#">Top</a>
 <hr>
 
 <!-- Ratchapong Tantiprasoplap 674230008 67/44-->
+ <h2 id="workshop">My workshop</h2>
+ <ul>
+    <li><a href="">workshop 01 : rabibit</a></li>
+    <li><a href="">workshop 02 : Login</a></li>
+ </ul>
+ <a href="#">Top</a>
+ <hr>
+ <a href="https://www.w3schools.com">Learn more about HTML</a>
+ <!-- Section 11 -->
+  <footer>
+    <p>&copy 2024 HTML Tutorial by Ratchapong Tantiprasopalp</p>
+</footer>
 </body>
 </html>
