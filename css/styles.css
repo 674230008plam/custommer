@@ -1,132 +1,236 @@
 <style>
-           /* Global CSS Styles */
-{
 
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+/* Global CSS Styles */ {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    line-height: 1.6;
-    background-color: rgb(143, 228, 231);
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  background-color: rgb(143, 228, 231);
+  background-image: url(https://www.creativefabrica.com/wp-content/uploads/2019/08/River-View-Through-Window-in-Rainy-Day-by-TasiPas-580x387.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
 }
 
-html {}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 200px;
+}
 
- /* Container Styles / */
+/* Container Styles / */
 .container {
-    max-width: 1200px;
-    margin: 200px auto 40px;
+  max-width: 1200px;
+  margin: 200px auto 40px;
 }
 
 /* Share CSS / */
 code {
-    background-color: #d45ff1;
-    border-radius: 4px;
-    padding: 2px 4px;
+  background-color: #d45ff1;
+  border-radius: 4px;
+  padding: 2px 4px;
 }
 
 pre {
-    background-color: #cafcfd;
-    border-left: (9, 215, 252) 5px solid;
-    padding: 10px;
+  background-color: #cafcfd;
+  border-left: (9, 215, 252) 5px solid;
+  padding: 10px;
 
-    white-space: per-wrap;
-    word-wrap: break-word;
-    border-left: rgb(72, 182, 245) 5px solid;
+  white-space: per-wrap;
+  word-wrap: break-word;
+  border-left: rgb(72, 182, 245) 5px solid;
 }
 
-.badge{
-    color: rgb(203, 122, 250);
-    border-radius: 4px;
-    padding: 2px 6px;
-    background-color: #bcbcbc;
-    font-size: 10px;
-    font-weight: bold;
+.badge {
+  color: rgb(203, 122, 250);
+  border-radius: 4px;
+  padding: 2px 6px;
+  background-color: #bcbcbc;
+  font-size: 10px;
+  font-weight: bold;
 
-    vertical-align: middle;
-
+  vertical-align: middle;
 }
 
-.card{
-    background-color: #ffffff;
-    padding: 25px 30px;
-    border-radius: 12px;
-    margin-bottom: 25px;
-    border-top: 10px;
-
+.card {
+  background-color: #ffffff;
+  padding: 25px 30px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+  border-top: 10px;
 }
 
-.noet{}
+.noet {
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
 
 /* / Group1 Head Styles / */
 header {
-    background-color: rgb(255, 255, 255);
-    padding: 20px;
-    box-shadow: 2px 5px 10px rgb(69, 69, 69);
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+  box-shadow: 2px 5px 10px rgb(69, 69, 69);
 
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    top: 0;
-    width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
-
 .list-mamu {
-
-    list-style: none;
-    display: flex;
-    gap: 20px;
+  list-style: none;
+  display: flex;
+  gap: 20px;
 }
 
 .list-mamu li {
-    background-color: rgb(199, 84, 245);
-    padding: 10px 15px;
-    border-radius: 50%;
-    margin-top: 15px;
+  margin-top: 15px;
+  transition: transform 2s ease;
+}
+
+.list-mamu li:hover {
+  transform: translateY(-35px);
 }
 
 .list-mamu li a {
-
-    text-decoration: none;
-    color: aliceblue;
-    font-weight: bolder;
+  text-decoration: none;
+  color: aliceblue;
+  font-weight: bold;
+  background: linear-gradient(135deg, pink, rgb(93, 195, 226));
+  box-shadow: 0 4px 15px rgb(109, 109, 109);
+  padding: 8px 6px;
+  border-radius: 8px;
 }
 
-
-.list-mamu li:hover {
-        background-color: #c37feb;
-        }
+.list-mamu a:hover {
+  background: linear-gradient(135deg, rgb(226, 74, 74), rgb(196, 128, 228));
+}
 
 h1 {
-    color: #c897f7;
-    margin: ;
+  color: #c897f7;
+  margin:;
 }
-
 
 p {
-
 }
+
 /* / Group2 / */
+.img-small {
+  width: 100px;
+  height: 100px;
+  margin-top: 5px;
+}
+
+.position {
+  display: flex;
+  align-items: center;
+  border: 5px dashed hsl(311, 63%, 79%);
+  padding: 5.5px;
+  margin: 3px;
+  border-radius: 25px;
+}
+
+.position.left {
+  justify-content: flex-start;
+}
+
+.position.center {
+  justify-content: center;
+}
+
+.position.right {
+  justify-content: flex-end;
+}
 
 /* / Group3 / */
+.image-fixed {
+  width: 260px;
+  height: 160px;
+  object-fit: cover;
+  margin: 15px;
+}
 
 /* / Group4 / */
+.obj-fit-image {
+  width: 800px;
+  height: 200px;
+  border: 1px solid black;
+}
+
+.obj-fit-image.contain {
+  object-fit: contain;
+}
+
+.obj-fit-image.fill {
+  object-fit: fill;
+}
+
+.obj-fit-image.cover {
+  object-fit: cover;
+}
 
 /* / Group5 / */
+.img-youtube {
+  width: 260px;
+  border-radius: 12px;
+  margin: 20px;
+  transition: 0.3;
+}
+
+.img-youtube img:hover {
+  /* transform: rotate(180deg); */
+  transform: scale(1.1);
+  box-shadow: 0 4px 12px;
+}
 
 /* / Group6 / */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 12px;
+}
+
+.gallery img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+}
 
 /* / Group7 / */
-
+figure {
+  margin: 0 auto;
+  text-align: center;
+}
 /* / Group8 / */
-
 /* / Group9 / */
-
-/* / Group10 */ */
+.bg-image {
+  background-image: url("../FC-Barcelona-Logo-PNG-Images.png");
+}
+/* / Group10 /*/
+.back-link {
+  color: #a575dd;
+  text-decoration: none;
+  background-color: rgb(192, 196, 255);
+  /*display: inline-block;/*/
+  display: block;
+  text-align: center;
+  padding: 10px 24px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgb(203, 61, 231);
+}
+.back-link:hover {
+  color: #5dbfd8;
+  text-decoration: none;
+  background-color: rgb(22, 245, 226);
+  /* text-decoration : unferline */
+}
