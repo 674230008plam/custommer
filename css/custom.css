@@ -404,6 +404,7 @@ body {
 }
 .submit-button :hover {
   opacity: 0.8;
+  transform: translateY(-2px);
 }
 .reset-button {
   background: linear-gradient(hsl(350, 100%, 88%), hsl(189, 100%, 82%));
@@ -411,16 +412,9 @@ body {
 }
 .reset-button :hover {
   opacity: 0.8;
+  transform: translateY(-2px);
 }
 /* right side Aside */
-.contact-widget {
-  background-color: #f8c9df;
-  padding: 40px;
-  border-radius: 20px;
-  border: 1px solid;
-  box-shadow: 0 2px 8px;
-  margin-top: 12px;
-}
 .Widget {
   background-color: rgb(255, 255, 255);
   border-radius: 4px;
@@ -430,13 +424,131 @@ body {
 .Widget + .Widget {
   margin-top: 10px;
 }
-.form-widget {
-  margin-bottom: 15px;
+body {
+  background: #f5f6fb;
+  font-family: "Prompt", sans-serif;
 }
-.f1 {
-  display: block;
-  font-size: 0.8rem;
+
+.newsletter-card {
+  max-width: 420px;
+  margin: 40px auto;
+  padding: 30px 25px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #8edfff, #ffa4f3);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+  color: #ffffff;
+}
+
+.newsletter-title {
+  text-align: center;
+  font-size: 22px;
+  margin-bottom: 25px;
+  font-weight: 600;
+}
+
+
+.newsletter-group {
+  margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.newsletter-label {
+  font-size: 14px;
+  margin-bottom: 6px;
   font-weight: 500;
-  color: rgb(255, 255, 255);
-  margin-bottom: 5px;
+}
+
+
+.newsletter-input,
+.newsletter-select {
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: none;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+
+.newsletter-input:focus,
+.newsletter-select:focus {
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.4);
+}
+
+
+.newsletter-btn {
+  width: 100%;
+  padding: 14px;
+  border-radius: 30px;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #ffffff;
+  background: linear-gradient(90deg, #c259ff, #6a8cd6);
+  transition: 0.3s ease;
+  margin-top: 10px;
+}
+
+
+.newsletter-btn:hover {
+  opacity: 0.9;
+  transform: translateY(-2px);
+  background: linear-gradient(90deg, #6a8cd6, #c259ff);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+.contact-card{
+  max-width: 450px;
+  margin: 40px auto;
+  padding: 30px 25px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, #ff8eb9, #d37af7);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+  color: #ffffff;
+}
+.contact-group{
+    margin-bottom: 18px;
+  display: flex;
+  flex-direction: column;
+}
+.contact-labe{
+  font-size: 14px;
+  margin-bottom: 6px;
+  font-weight: 500;
+}
+.contact-input,
+.contact-seclect{
+  padding: 12px 14px;
+  border-radius: 12px;
+  border: none;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+.contact-input:focus,
+.contact-seclect:focus{
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.4);
+}
+.contact-btn{
+  width: 100%;
+  padding: 14px;
+  border-radius: 30px;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #ffffff;
+  background: linear-gradient(90deg, #59ecff, #6a7ad6);
+  transition: 0.3s ease;
+  margin-top: 10px;
+}
+.contact-btn:hover{  
+  opacity: 0.9;
+  transform: translateY(-2px);
+  background: linear-gradient(90deg, #6a7ad6, #59ecff);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
