@@ -413,12 +413,30 @@ body {
   opacity: 0.8;
 }
 /* right side Aside */
+.contact-widget {
+  background-color: #f8c9df;
+  padding: 40px;
+  border-radius: 20px;
+  border: 1px solid;
+  box-shadow: 0 2px 8px;
+  margin-top: 12px;
+}
 .Widget {
-  background-color: rgb(247, 247, 247);
+  background-color: rgb(255, 255, 255);
   border-radius: 4px;
   padding: 18px;
 }
 
 .Widget + .Widget {
   margin-top: 10px;
+}
+.form-widget {
+  margin-bottom: 15px;
+}
+.f1 {
+  display: block;
+  font-size: 0.8rem;
+  font-weight: 500;
+  color: rgb(255, 255, 255);
+  margin-bottom: 5px;
 }
