@@ -295,40 +295,62 @@
                         
                     </div>
 
-                    <!-- Widegt 025 -->
+                    <!-- Widegt 02 -->
                     <div class="Widget">
-                        <div class="contact-widget">
-                            <h2 style="text-align: center;">รับข่าวสารใหม่</h2>
-                            <form action="method">
-                                <div class="form-widget">
-                                    <label for="f1" class="f1">ชื่อของคุณ</label>
-                                        <input type="text" id="f1" name="f1" placeholder="ป้อนชื่อ"class="form-input">
-                                </div>
+                        <div class="newsletter-card">
+                            <h2 class="newsletter-title">📩 รับข่าวสารใหม่</h2>
 
-                                <div class="form-widget">
-                                    <label for="wemail" class="f1">อีเมล</label>
-                                        <input type="text" id="wemail" name="wemail" placeholder="ป้อนชื่อ"class="form-input">
-                                </div>
+                            <form action="#" method="post">
 
-                                <div class="form-widget">
-                                        <label for="topic" class="f1">สนใจเนื้อหาด้านไหน</label>
-                                        <select name="topic" id="topic" class="form-seclect">
-                                            <option value="ด้านซ้าย">ด้านซ้าย</option>
-                                            <option value="ด้านขวา">ด้านซ้าย</option>
-                                            <option value="ด้านหน้า">ด้านซ้าย</option>
-                                            <option value="ด้านหลัง">ด้านซ้าย</option>
-                                        </select>
-                                    </div>
-                            </form>
-                        </div>
-                    
-                    </div>
+                            <div class="newsletter-group">
+                                <label for="nl-name" class="newsletter-label">ชื่อของคุณ</label>
+                                <input class="newsletter-input"type="text"id="nl-name"name="fname"placeholder="ใส่ชื่อของคุณ">
+                            </div>
+
+                            <div class="newsletter-group">
+                                <label for="nl-email" class="newsletter-label">อีเมล</label>
+                                <input class="newsletter-input"type="email"id="nl-email"name="email"placeholder="@">
+                            </div>
+
+                            <div class="newsletter-group">
+                                <label for="nl-topic" class="newsletter-label">สนใจเนื้อหาด้านไหน</label>
+                                <select name="topic" id="nl-topic" class="newsletter-select">
+                                    <option value="all">ทุกหัวข้อ</option>
+                                     <option value="ด้านซ้าย">ด้านซ้าย</option>
+                                    <option value="ด้านขวา">ด้านขวา</option>
+                                    <option value="ด้านหน้า">ด้านหน้า</option>
+                                    <option value="ด้านหลัง">ด้านหลัง</option>
+                                </select>
+                            </div>
+                            <button class="newsletter-btn"type="submit"onclick="alert('สมัครเรียบร้อย!')">🚀 สมัครเลย!</button>
+                            </div>
 
                     <!-- Widegt 03 -->
                     <div class="Widget">
-                        💬 ติดต่อด่วน
-                        ชื่อ เรื่องที่ต้องการติดต่อ ข้อความสั้นๆ 📤 ส่งเลย
+                        <div class="contact-card">
+                            <h2 style="text-align: center;">💬 ติดต่อด่วน</h2>
+                            <form action="" method="">
+                                <div class="contact-group">
+                                    <label for="cname" class="contact-label">ชื่อ</label>
+                                    <input class="contact-input" type="cname" id="cname" name="cname" placeholder="ใส่ชื่อของคุณ">
+                                </div>
 
+                                <div class="contact-group">
+                                    <label class="contact-label" for="contactselcet">เรื่องที่ต้องการติดต่อ</label>
+                                    <select class="contact-seclect" name="contactselcet" id="contactselcet">
+                                        <option value="ร้องทุกข์">ร้องทุกข์</option>
+                                        <option value="ติดต่อส่งสัย">ติดต่อส่งสัย</option>
+                                        <option value="ติดต่อส่วนตัว">ติดต่อส่วนตัว</option>
+                                        <option value="อยากรู้และสงสัยมาก">อยากรู้และสงสัยมาก</option>
+                                    </select>
+                                </div>
+                                 <div class="contact-group">
+                                     <label class="contact-label" for="clname">ข้อความสั้นๆ</label>
+                                     <input class="contact-input" type="clname" id="clname" name="clname" placeholder="ใส่ข้อความสั้นๆ">
+                                 </div>
+                                 <button class="contact-btn"type="submit"onclick="alert('สมัครเรียบร้อย!')">🚀 ส่งเลย!</button>
+                            </form>
+                        </div>
                     </div>
 
                     <!-- Widegt 04 -->
