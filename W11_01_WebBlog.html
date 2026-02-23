@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ratchapong web Blog</title>
+    <title>Raphiphat web Blog</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -207,17 +207,78 @@
 
                     </div>
 
-                    <!-- card 03 -->
+                    <!-- card 03 form-->
                     <div class="card">
-                        📞 ติดต่อเรา
-                        ชื่อ นามสกุล อีเมล เบอร์โทรศัพท์ บริษัท/องค์กร
-                        หัวข้อที่สนใจ รายละเอียด
-                        ความสนใจเพิ่มเติม
-                        ต้องการรับข่าวสารทาง email
-                        สนใจบริการปรึกษา
-                        สนใจความร่วมมือ
+                        <h2 style="text-align: center;">📞 ติดต่อเรา</h2>
 
-                        📨 ส่งข้อความ
+                        <div class="contact-form-main-card">
+                            <form action="" method="">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="fname" class="form-label">ชื่อ</label>
+                                        <input type="text" id="fname" name="fname" placeholder="ป้อนชื่อ"class="form-input">
+                                    </div>
+                                        <div class="form-group">
+                                            <label for="lname" class="form-label">นามสกุล</label>
+                                            <input type="text" id="lname" name="lname" placeholder="ป้อนนามสกุล" class="form-input">
+                                        </div>
+                                </div>
+                                
+                                    <div class="form-row">
+                                        <div class="form-group">
+                                            <label for="email" class="form-label">อีเมล</label>
+                                            <input type="text" id="email" name="email" placeholder="ป้อนอีเมล" class="form-input">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="phone" class="form-label">เบอร์โทรศัพท์</label>
+                                            <input type="text" id="phone" name="phone" placeholder="xxx-xxx-xxxx" class="form-input">
+                                        </div>
+                                    </div>
+                                
+                                    <div class="form-group">
+                                        <label for="company" class="form-label">บริษัท/องค์กร</label>
+                                        <input type="text" id="company" name="company" placeholder="ป้อนชื่อบริษัท/องค์กร" class="form-input">
+                                    </div>
+                                
+                                    <div class="form-group">
+                                        <label for="topic" class="form-label">หัวข้อที่สนใจ</label>
+                                        <select name="topic" id="topic" class="form-seclect">
+                                            <option value="game">game</option>
+                                            <option value="mobile">mobile</option>
+                                            <option value="sit">sit</option>
+                                            <option value="Sleep">Sleep</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="detail" class="form-label">รายละเอียด</label>
+                                        <textarea name="detail" id="detail" class="form-textarea"></textarea>
+                                    </div>
+                                
+                                    <div class="form-group">
+                                        <label class="form-label">ความสนใจเพิ่มเติม</label>
+                                        <div class="form-checkbox-group">
+                                            <div class="checkbox-item">
+                                                <input type="checkbox" name="interests[]" value="newsletter">
+                                                <span>ต้องการรับช่าวสาร email</span>
+                                            </div>
+                                            <div class="checkbox-item">
+                                                <input type="checkbox" name="interests[]" value="consult">
+                                                <span>สนใจการปรึกษา</span>
+                                            </div>
+                                            <div class="checkbox-item">
+                                                <input type="checkbox" name="interests[]" value="partnership">
+                                                <span>สนใจความร่วมมือ</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                <div>
+                                    <button type="submit" class="form-button submit-button">ส่งข้อความ</button>
+                                    <button type="reset" class="form-button reset-button">ล้างข้อมูล</button>
+                                </div>
+                            </form>
+                        </div>
                     </div>
                 </main>
 
