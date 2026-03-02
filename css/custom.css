@@ -192,9 +192,9 @@ body {
 
 /* left side-main Content */
 .card {
-  background-color: rgb(247, 247, 247);
+  background-color: rgb(255, 255, 255);
   border-radius: 4px;
-  padding: 18px;
+  padding: 10px;
 }
 
 .card + .card {
@@ -424,6 +424,38 @@ body {
 .Widget + .Widget {
   margin-top: 10px;
 }
+.widget-title {
+  font-weight: 800;
+  font-size: 1rem;
+  margin-bottom: 8px;
+}
+.auther-photo {
+  background-color: rgb(194, 194, 194);
+  /*padding: 70px 0px;*/
+  text-align: center;
+  height: 140px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.auther-photo2 {
+  background-color: rgb(194, 194, 194);
+  /*padding: 70px 0px;*/
+  height: 250px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.btn-facebook {
+  background-color: rgb(72, 72, 216);
+  color: white;
+  padding: 12px 10px;
+  border-radius: 10px;
+  display: inline-block;
+  margin-top: 5px;
+}
+/* -------------------*/
 body {
   background: #f5f6fb;
   font-family: "Prompt", sans-serif;
@@ -446,20 +478,17 @@ body {
   font-weight: 600;
 }
 
-
 .newsletter-group {
   margin-bottom: 18px;
   display: flex;
   flex-direction: column;
 }
 
-
 .newsletter-label {
   font-size: 14px;
   margin-bottom: 6px;
   font-weight: 500;
 }
-
 
 .newsletter-input,
 .newsletter-select {
@@ -472,12 +501,10 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
-
 .newsletter-input:focus,
 .newsletter-select:focus {
   box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.4);
 }
-
 
 .newsletter-btn {
   width: 100%;
@@ -493,14 +520,13 @@ body {
   margin-top: 10px;
 }
 
-
 .newsletter-btn:hover {
   opacity: 0.9;
   transform: translateY(-2px);
   background: linear-gradient(90deg, #6a8cd6, #c259ff);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
 }
-.contact-card{
+.contact-card {
   max-width: 450px;
   margin: 40px auto;
   padding: 30px 25px;
@@ -509,18 +535,18 @@ body {
   box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
   color: #ffffff;
 }
-.contact-group{
-    margin-bottom: 18px;
+.contact-group {
+  margin-bottom: 18px;
   display: flex;
   flex-direction: column;
 }
-.contact-labe{
+.contact-labe {
   font-size: 14px;
   margin-bottom: 6px;
   font-weight: 500;
 }
 .contact-input,
-.contact-seclect{
+.contact-seclect {
   padding: 12px 14px;
   border-radius: 12px;
   border: none;
@@ -530,10 +556,10 @@ body {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 .contact-input:focus,
-.contact-seclect:focus{
+.contact-seclect:focus {
   box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.4);
 }
-.contact-btn{
+.contact-btn {
   width: 100%;
   padding: 14px;
   border-radius: 30px;
@@ -546,9 +572,76 @@ body {
   transition: 0.3s ease;
   margin-top: 10px;
 }
-.contact-btn:hover{  
+.contact-btn:hover {
   opacity: 0.9;
   transform: translateY(-2px);
   background: linear-gradient(90deg, #6a7ad6, #59ecff);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+/* ---------ตารางราคาทอง----------*/
+:root {
+  --bg01: rgb(203, 246, 252);
+  --bg02: rgb(116, 217, 248);
+  --bg03: rgb(236, 225, 66);
+  --line: rgb(0, 174, 255);
+  --green-text: green;
+  --red-text: red;
+}
+.wrap-gold-table {
+  background-color: var(--bg01);
+  border-radius: 15px;
+  overflow: hidden;
+  border: 2px solid var(--line);
+}
+.gold-table {
+  border: 1px solid var(--line);
+  border-collapse: collapse;
+  width: 100%;
+}
+.gold-table th,
+.gold-table td {
+  border: 1px solid var(--line);
+  padding: 10px;
+}
+.gold-table thead th,
+.gold-table tbody th {
+  background-color: var(--bg02);
+}
+.gold-table tbody .gold-tablena th,
+.gold-table tbody .gold-tablena td {
+  background-color: var(--bg03);
+  font-weight: bold;
+}
+.num-center {
+  text-align: center;
+}
+.num-right {
+  text-align: right;
+}
+.green-text {
+  color: var(--green-text);
+}
+.red-text {
+  color: var(--red-text);
+}
+.icon {
+  display: inline-block;
+  width: 0px;
+  height: 0px;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+}
+.up {
+  border-bottom: 10px solid var(--green-text);
+}
+.down {
+  border-top: 10px solid var(--red-text);
+}
+/* ---------ตารางราคาทอง----------*/
+footer {
+  background: #000000;
+  padding: 40px 0px;
+  color: #ffffff;
+  margin-top: 30px;
+  text-align: center;
 }
