@@ -638,6 +638,9 @@ body {
   border-top: 10px solid var(--red-text);
 }
 /* ---------ตารางราคาทอง----------*/
+
+/*======================================================*/
+
 footer {
   background: #000000;
   padding: 40px 0px;
@@ -645,3 +648,150 @@ footer {
   margin-top: 30px;
   text-align: center;
 }
+.card-margin {
+  margin: 30px 0px;
+}
+/*=========================*/
+/*=========Responsive======*/
+/*======หน้าจอสำหรับเท็บเล็ท769-991=======*/
+@media (max-width: 992px) {
+  .site-header {
+    background-color: #fffb00;
+  }
+  .content-grid {
+    grid-template-columns: 1fr;
+    padding: 30px;
+  }
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 5px;
+  }
+  .form-checkbox-group {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .card-margin {
+    margin: 5px 25px;
+  }
+  .header-inner {
+    padding: 0 15px;
+  }
+}
+/*======หน้าจอสำหรับ577-768=======*/
+@media (max-width: 768px) {
+  html {
+    font-size: 14px;
+  }
+  .site-header {
+    background-color: rgb(0, 255, 42);
+  }
+  .hero-grid {
+    grid-template-columns: 1fr;
+  }
+  .nav-menu {
+    flex-direction: column;
+    padding: 15px 30px;
+  }
+  .nav-menu li a {
+    border-top: 1px solid rgba(196, 196, 196, 0.411);
+  }
+  .gold-table {
+    display: block;
+    overflow-x: auto;
+    white-space: nowrap;
+  }
+  .header-inner {
+    padding: 0 40px;
+  }
+}
+/*======หน้าจอสำหรับโมบายเล็ก1-576=======*/
+@media (max-width: 576px) {
+  .site-header {
+    background-color: rgb(204, 0, 255);
+  }
+  /*======hamburger menu=======*/
+  #hamburger-menu {
+    display: block;
+    width: 30px;
+    height: 25px;
+    position: relative;
+    margin-left: 15px;
+    z-index: 1000;
+    cursor: pointer;
+  }
+  /*======สร้างเส้นตรง=======*/
+  #hamburger-menu span,
+  #hamburger-menu span:before,
+  #hamburger-menu span::after {
+    background-color: #fff;
+    height: 3px;
+    width: 100%;
+    display: block;
+    position: absolute;
+    content: "";
+  }
+  /*======จัดตำแหน่งเส้น=======*/
+  #hamburger-menu span {
+    top: 11px;
+  }
+  #hamburger-menu span:before {
+    top: -8px;
+  }
+  #hamburger-menu span::after {
+    top: 8px;
+  }
+  /*====สร้างเส้น x ====*/
+  #hamburger-menu.close span {
+    background: transparent;
+  }
+  #hamburger-menu.close span:before {
+    transform: rotate(45deg);
+    top: 0;
+  }
+  #hamburger-menu.close span::after {
+    transform: rotate(-45deg);
+    top: 0;
+  }
+  /*=============*/
+  #menu {
+    display: none;
+    flex-direction: column;
+  }
+  /*======แสดงเมนู=======*/
+  #menu.overlay {
+    display: flex;
+  }
+  /*====สลับตำแหน่งไอเท็ม=====*/
+  .order-box-image {
+    order: 3;
+  }
+  .order-box-table {
+    order: 1;
+  }
+  .order-box-form {
+    order: 2;
+  }
+  /*=============*/
+  .sidebar {
+    display: flex;
+    flex-direction: column;
+  }
+  .order-w-intro {
+    order: -5;
+  }
+  .order-w-f-green {
+    order: -1;
+  }
+  .order-w-f-purple {
+    order: -2;
+  }
+  .order-w-fb {
+    order: -4;
+  }
+  .order-w-sp {
+    order: -3;
+  }
+}
+
+/*=============*/
+/*=============*/
