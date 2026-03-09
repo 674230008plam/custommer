@@ -32,14 +32,19 @@
     <!---Navdar--->
     <nav class="main-nav">
         <div class="wrapper">
-            <ul class="nav-menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">AI Technology</a></li>
-                <li><a href="#">Machine Learning</a></li>
-                <li><a href="#">Deep Learning</a></li>
-                <li><a href="#">AI Tools</a></li>
-                <li><a href="#">AI News</a></li>
-            </ul>
+            <div id="hamburger-menu">
+                <span></span>
+            </div>
+            <div id="menu">
+                <ul class="nav-menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">AI Technology</a></li>
+                    <li><a href="#">Machine Learning</a></li>
+                    <li><a href="#">Deep Learning</a></li>
+                    <li><a href="#test.html">AI Tools</a></li>
+                    <li><a href="#contact">AI News</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 
@@ -98,7 +103,7 @@
                 <!--left side-->
                 <main class="post-list">
                     <!-- card 01 -->
-                    <div class="card">
+                    <div class="card order-box-image">
                         <p class="card-headline">CATEGORY ARCHIVES: <b>RESPONSIVE DESIGN</b></p>
 
                         <article>
@@ -132,7 +137,7 @@
                     </div>
 
                     <!-- card 02 -->
-                    <div class="card">
+                    <div class="card order-box-table">
                         <p class="post-destcriptio">ATEGORY ARCHIVES: <strong>CSS DISPLAY PROPERTY</strong></p>
                         <article>
                             <header class="post-header">
@@ -208,7 +213,7 @@
                     </div>
 
                     <!-- card 03 form-->
-                    <div class="card">
+                    <div class="card order-box-form" id="contact">
                         <h2 style="text-align: center;">📞 ติดต่อเรา</h2>
 
                         <div class="contact-form-main-card">
@@ -281,12 +286,10 @@
                         </div>
                     </div>
                 </main>
-                
-
                 <!--right side-->
-                <aside>
+                <aside class="sidebar">
                     <!-- Widegt 01 -->
-                    <div class="Widget">
+                    <div class="Widget order-w-intro">
                         
                             <div class="widget-title">สวัสดีครับ ยินดีต้อนรับ</div>
                             <p class="post-description">
@@ -301,7 +304,7 @@
                     </div>
 
                     <!-- Widegt 02 -->
-                    <div class="Widget">
+                    <div class="Widget order-w-f-green">
                         <div class="newsletter-card">
                             <h2 class="newsletter-title">📩 รับข่าวสารใหม่</h2>
 
@@ -331,7 +334,7 @@
                             </div>
 
                     <!-- Widegt 03 -->
-                    <div class="Widget">
+                    <div class="Widget order-w-f-purple">
                         <div class="contact-card">
                             <h2 style="text-align: center;">💬 ติดต่อด่วน</h2>
                             <form action="" method="">
@@ -359,14 +362,14 @@
                     </div>
 
                     <!-- Widegt 04 -->
-                    <div class="Widget">
+                    <div class="Widget order-w-fb">
                         <div class="widget-title"> Facebook Like </div>
                             <div class="auther-photo">กล่อง Facebook Like (ตัวอย่าง)
                         203,779 คนถูกใจ</div>
                     </div>
 
                     <!-- Widegt 05 -->
-                    <div class="Widget">
+                    <div class="Widget order-w-sp">
                         <div class="widget-title"> Sponsor </div>
                             <div class="auther-photo2">พื้นที่โฆษณา / วิดีโอ</div>
                     </div>
@@ -383,7 +386,7 @@
             </div>
             <!-- ราคาทอง -->
 
-            <div class="card" style="margin-top: 30px;">
+            <div class="card card-margin">
                         <p class="card-headline">CATEGORY ARCHIVES: <b>RESPONSIVE DESIGN</b></p>
 
                         <article>
@@ -483,6 +486,27 @@
     <footer>© 2025 Ratchapong — All rights reserved.
             <p>Designed for educational/demo purposes • <a href="">Contact</a></p>
     </footer>
+    <script>
+        var burgerMenu = document.getElementById('hamburger-menu');
+        var overlay = document.getElementById('menu');
+
+        burgerMenu.addEventListener('click', function () {
+            this.classList.toggle("close");
+            overlay.classList.toggle("overlay");
+        });
+
+        // ปิดเมนูเมื่อกดลิงก์
+        var menuLinks = document.querySelectorAll('#menu a');
+
+        menuLinks.forEach(function (link) {
+            link.addEventListener('click', function () {
+                burgerMenu.classList.remove("close");
+                overlay.classList.remove("overlay");
+            });
+        });
+
+
+    </script>
 </body>
 
 </html>
