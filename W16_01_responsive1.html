@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>เที่ยวเมืองน่าไป</title>
+<title>เที่ยวเมืองน่าไป (ราชบุรี)</title>
 
 <style>
 *{
@@ -17,7 +17,7 @@ body{
 background:#f5f7fb;
 }
 
-/* ===== Desktop Default ===== */
+/* Navbar */
 .navbar{
 display:flex;
 justify-content:space-between;
@@ -63,12 +63,69 @@ gap:40px;
 max-width:520px;
 }
 
+.hero-text h1{
+margin-bottom:15px;
+}
+
 .hero img{
 width:420px;
 border-radius:15px;
 }
 
-/* ===== iPad ===== */
+/* Section */
+.section-title{
+text-align:center;
+margin-top:40px;
+}
+
+.cards{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+padding:40px 60px;
+}
+
+.card{
+background:white;
+border-radius:12px;
+overflow:hidden;
+box-shadow:0 4px 15px rgba(0,0,0,0.05);
+transition:0.3s;
+}
+
+.card:hover{
+transform:translateY(-5px);
+}
+
+.card img{
+width:100%;
+height:200px;
+object-fit:cover;
+}
+
+.card-body{
+padding:15px;
+}
+
+.card button{
+margin-top:10px;
+background:#f97316;
+border:none;
+color:white;
+padding:8px 15px;
+border-radius:6px;
+cursor:pointer;
+}
+
+/* Footer */
+footer{
+background:#1e3a8a;
+color:white;
+text-align:center;
+padding:15px;
+}
+
+/* iPad */
 @media (max-width:1024px){
 
 .hero{
@@ -80,13 +137,18 @@ text-align:center;
 width:80%;
 }
 
+.cards{
+grid-template-columns:repeat(2,1fr);
+padding:40px 30px;
+}
+
 .navbar{
 padding:15px 30px;
 }
 
 }
 
-/* ===== iPhone 13 / 14 ===== */
+/* iPhone 13 / 14 */
 @media (max-width:430px){
 
 .menu-toggle{
@@ -119,102 +181,9 @@ text-align:center;
 width:100%;
 }
 
-}
-.hero-text{
-max-width:520px;
-}
-
-.hero-text h1{
-margin-bottom:15px;
-}
-
-.hero img{
-width:420px;
-border-radius:15px;
-}
-
-.cards{
-display:grid;
-grid-template-columns:repeat(3,1fr);
-gap:20px;
-margin-top:30px;
-padding:0 60px;
-}
-
-.card{
-background:white;
-border-radius:12px;
-overflow:hidden;
-box-shadow:0 4px 15px rgba(0,0,0,0.05);
-}
-
-.card img{
-width:100%;
-height:180px;
-object-fit:cover;
-}
-
-.card-body{
-padding:15px;
-}
-
-footer{
-margin-top:40px;
-background:#1e3a8a;
-color:white;
-text-align:center;
-padding:15px;
-}
-
-
-/* ===== iPad ===== */
-@media (max-width:1024px){
-
-.hero{
-flex-direction:column;
-text-align:center;
-}
-
-.hero img{
-width:80%;
-}
-
-.cards{
-grid-template-columns:repeat(2,1fr);
-padding:0 30px;
-}
-
-nav{
-padding:15px 30px;
-}
-
-}
-
-
-/* ===== iPhone 13 / 14 ===== */
-@media (max-width:430px){
-
-nav{
-flex-direction:column;
-gap:10px;
-}
-
-nav ul{
-flex-direction:column;
-align-items:center;
-}
-
-.hero{
-padding:30px 20px;
-}
-
-.hero img{
-width:100%;
-}
-
 .cards{
 grid-template-columns:1fr;
-padding:0 20px;
+padding:30px 20px;
 }
 
 .hero-text h1{
@@ -222,67 +191,83 @@ font-size:22px;
 }
 
 }
-
 </style>
 </head>
 
 <body>
 
+<!-- Navbar -->
 <nav class="navbar">
-  <div class="logo">เที่ยวเมืองน่าไป (กาญจนบุรี)</div>
+<div class="logo">เที่ยวเมืองน่าไป (ราชบุรี)</div>
 
-  <div class="menu-toggle" id="menu-toggle">
-    ☰
-  </div>
+<div class="menu-toggle" id="menu-toggle">
+☰
+</div>
 
-  <ul class="nav-menu" id="nav-menu">
-    <li><a href="#">หน้าแรก</a></li>
-    <li><a href="#">สถานที่ท่องเที่ยว</a></li>
-    <li><a href="#">ติดต่อ</a></li>
-  </ul>
+<ul class="nav-menu" id="nav-menu">
+<li><a href="#">หน้าแรก</a></li>
+<li><a href="#">สถานที่ท่องเที่ยว</a></li>
+<li><a href="#">ติดต่อ</a></li>
+</ul>
 </nav>
 
+<!-- Hero -->
 <section class="hero">
-  <div class="hero-text">
-    <h1>ค้นพบเสน่ห์ของเมืองท่องเที่ยวที่คุณไม่ควรพลาด</h1>
-    <p>สัมผัสธรรมชาติ วัฒนธรรม และสถานที่ท่องเที่ยวสวยงาม</p>
-    <button>อ่านเพิ่มเติม</button>
-  </div>
+<div class="hero-text">
+<h1>เที่ยวราชบุรี เมืองแห่งธรรมชาติและวัฒนธรรม</h1>
+<p>พบกับสถานที่ท่องเที่ยวสวยงาม ตลาดน้ำ ภูเขา และแลนด์มาร์กสำคัญของจังหวัดราชบุรี</p>
+<button>อ่านเพิ่มเติม</button>
+</div>
 
-  <img src="https://gdb.voanews.com/EEA0B145-95D4-4532-9C69-D0FCD1833D53_w408_r0_s.jpg">
+<img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
 </section>
 
-<h2 style="text-align:center;margin-top:40px;">สถานที่ท่องเที่ยวแนะนำ</h2>
+<!-- Section -->
+<h2 class="section-title">สถานที่ท่องเที่ยวแนะนำ จังหวัดราชบุรี</h2>
 
 <div class="cards">
+
 <div class="card">
-<img src="https://www.thaiartstudio.com/wp-content/uploads/2017/08/1238030972.jpg">
+<img src="https://images.unsplash.com/photo-1582719478250-c89cae4dc85b">
 <div class="card-body">
-<h3>อุทยานธรรมชาติ</h3>
-<p>สถานที่ท่องเที่ยวสวยงาม</p>
+<h3>ตลาดน้ำดำเนินสะดวก</h3>
+<p>ตลาดน้ำชื่อดังของราชบุรี นักท่องเที่ยวนิยมมานั่งเรือชมวิถีชีวิตชาวบ้าน</p>
+<button>อ่านเพิ่มเติม</button>
 </div>
 </div>
 
 <div class="card">
-<img src="https://www.thaiartstudio.com/wp-content/uploads/2017/08/1238030972.jpg">
+<img src="https://images.unsplash.com/photo-1501785888041-af3ef285b470">
 <div class="card-body">
-<h3>อุทยานธรรมชาติ</h3>
-<p>สถานที่ท่องเที่ยวสวยงาม</p>
+<h3>อุทยานหินเขางู</h3>
+<p>สถานที่ท่องเที่ยวธรรมชาติที่มีภูเขาหินและวิวสวยงาม</p>
+<button>อ่านเพิ่มเติม</button>
 </div>
 </div>
 
 <div class="card">
-<img src="https://www.thaiartstudio.com/wp-content/uploads/2017/08/1238030972.jpg">
+<img src="https://images.unsplash.com/photo-1526779259212-756e1f4c9e3b">
 <div class="card-body">
-<h3>อุทยานธรรมชาติ</h3>
-<p>สถานที่ท่องเที่ยวสวยงาม</p>
+<h3>วัดหนองหอย</h3>
+<p>วัดชื่อดังของราชบุรี มีพระพุทธรูปองค์ใหญ่และวิวภูเขาสวยงาม</p>
+<button>อ่านเพิ่มเติม</button>
 </div>
 </div>
+
 </div>
 
 <footer>
-© 2025 เที่ยวเมืองน่าไป
+© 2025 เที่ยวเมืองน่าไป จังหวัดราชบุรี
 </footer>
+
+<script>
+const toggle = document.getElementById("menu-toggle");
+const menu = document.getElementById("nav-menu");
+
+toggle.onclick = () => {
+menu.classList.toggle("active");
+};
+</script>
 
 </body>
 </html>
